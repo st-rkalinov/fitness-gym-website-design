@@ -13,4 +13,26 @@ html {
 
 body {
     box-sizing: border-box;
+
+    > * {
+        grid-column: full-start / full-end;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: [full-start] 15rem [middle-start] repeat(3, [col-start] 1fr [col-end]) [middle-end full-end];
+    grid-template-rows: [emptybar-start] 3.5vh [emptybar-end nav-start] 4vh
+    [nav-end header-start] 93vh
+    [header-end about-us-start] 60vh
+    [about-us-end our-thinking-start] 33vh
+    [our-thinking-end opinions-start] 100vh
+    [opinions-end features-start] 90vh
+    [features-end quote1-start] 20vh
+    [quote1-end thought-start] 70vh
+    [thought-end tickets-start] 60vh
+    [tickets-end cycle-start] 120vh
+    [cycle-end events-start] 15vh
+    [events-end quote2-start] 20vh
+    [quote2-end footer-start] 50vh [footer-end];
 }

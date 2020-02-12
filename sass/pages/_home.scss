@@ -1,0 +1,37 @@
+.section-about-us {
+  background-color: azure;
+  grid-row: about-us-start / about-us-end;
+  grid-column: full-start / full-end;
+}
+
+.section-our-thinking {
+  background-color: brown;
+}
+
+.section-opinions {
+  background-color: orange;
+}
+
+.section-features {
+  background-color: aqua;
+}
+
+.section-quote {
+  background-color: chartreuse;
+}
+
+.section-thought {
+  background-color: cornflowerblue;
+}
+
+.section-tickets {
+  background-color: darkgreen;
+}
+
+.section-cycle {
+  background-color: darkorchid;
+}
+
+.section-events {
+  background-color: darkslategray;
+}
