@@ -1,0 +1,118 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+body > * {
+  grid-column: full-start/full-end;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: [full-start] 15rem [middle-start] repeat(3, [col-start] 1fr [col-end]) [middle-end full-end];
+  grid-template-rows: [emptybar-start] 3.5vh [emptybar-end nav-start] 4vh [nav-end header-start] 110vh [header-end about-us-start] 60vh [about-us-end our-thinking-start] 33vh [our-thinking-end opinions-start] 100vh [opinions-end features-start] 90vh [features-end quote1-start] 20vh [quote1-end thought-start] 70vh [thought-end tickets-start] 60vh [tickets-end cycle-start] 120vh [cycle-end events-start] 15vh [events-end quote2-start] 20vh [quote2-end footer-start] 50vh [footer-end];
+}
+
+.heading-1 {
+  font-size: 18rem;
+  mix-blend-mode: lighten;
+  text-shadow: 0 0 5px white, 0 0 10px white, 0 0 10px white;
+  -webkit-text-stroke: 3px white;
+  font-weight: 900;
+}
+
+.button {
+  text-transform: uppercase;
+  color: #3ea2d8;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 1.3rem 5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 2.5rem;
+  width: 25rem;
+  margin: 0 auto;
+}
+
+.navigation {
+  background-color: aquamarine;
+  grid-row: nav-start/nav-end;
+  z-index: 1;
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/header-background.jpg");
+  background-size: cover;
+  background-position: center center;
+  grid-row: emptybar-start/header-end;
+  display: grid;
+  grid-template-columns: 1fr 45vw 1fr;
+  grid-template-rows: 25vh 1fr;
+  align-items: center;
+  text-align: center;
+}
+.header__content {
+  grid-column: 2/3;
+  grid-row: 2/-1;
+  display: grid;
+  grid-row-gap: 4rem;
+  grid-template-rows: repeat(3, min-content);
+  align-items: center;
+}
+.header__text {
+  font-size: 2.1rem;
+  color: white;
+  padding-bottom: 7rem;
+}
+
+.section-about-us {
+  background-color: azure;
+  grid-row: about-us-start/about-us-end;
+  grid-column: full-start/full-end;
+}
+
+.section-our-thinking {
+  background-color: brown;
+}
+
+.section-opinions {
+  background-color: orange;
+}
+
+.section-features {
+  background-color: aqua;
+}
+
+.section-quote {
+  background-color: chartreuse;
+}
+
+.section-thought {
+  background-color: cornflowerblue;
+}
+
+.section-tickets {
+  background-color: darkgreen;
+}
+
+.section-cycle {
+  background-color: darkorchid;
+}
+
+.section-events {
+  background-color: darkslategray;
+}
+
+/*# sourceMappingURL=style.comp.css.map */

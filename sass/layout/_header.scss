@@ -1,5 +1,26 @@
 .header {
-  background-color: orangered;
+  background-image: linear-gradient(rgba($color-overlay, .3), rgba($color-overlay, .3)), url("../img/header-background.jpg");
+  background-size: cover;
+  background-position: center center;
   grid-row: emptybar-start / header-end;
-  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: 1fr 45vw 1fr;
+  grid-template-rows: 25vh 1fr;
+  align-items: center;
+  text-align: center;
+
+  &__content {
+    grid-column: 2 / 3;
+    grid-row: 2 / -1;
+    display: grid;
+    grid-row-gap: 4rem;
+    grid-template-rows: repeat(3, min-content);
+    align-items: center;
+  }
+
+  &__text {
+    font-size: 2.1rem;
+    color: $color-primary;
+    padding-bottom: 7rem;
+  }
 }

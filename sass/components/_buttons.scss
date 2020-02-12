@@ -1,0 +1,12 @@
+.button {
+  text-transform: uppercase;
+  color: #3ea2d8;
+  font-family: $font-secondary;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 1.3rem 5rem;
+  background-color: rgba($color-primary, .9);
+  border-radius: 2.5rem;
+  width: 25rem;
+  margin: 0 auto;
+}

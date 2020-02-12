@@ -7,12 +7,13 @@
 }
 
 html {
-    // This defines what 1rem is
     font-size: 62.5%;
 }
 
 body {
     box-sizing: border-box;
+    font-family: $font-primary;
+    font-weight: 400;
 
     > * {
         grid-column: full-start / full-end;
@@ -23,7 +24,7 @@ body {
     display: grid;
     grid-template-columns: [full-start] 15rem [middle-start] repeat(3, [col-start] 1fr [col-end]) [middle-end full-end];
     grid-template-rows: [emptybar-start] 3.5vh [emptybar-end nav-start] 4vh
-    [nav-end header-start] 93vh
+    [nav-end header-start] 110vh
     [header-end about-us-start] 60vh
     [about-us-end our-thinking-start] 33vh
     [our-thinking-end opinions-start] 100vh
