@@ -8,11 +8,16 @@
 
 .heading-3 {
   font-size: 2.9rem;
-  color: #3e3f3a;
+  color: $color-tertiary;
   text-transform: uppercase;
 
   &--about-us {
     font-weight: 900;
+  }
+
+  &--opinions {
+    font-family: $font-secondary;
+    grid-column: 2 / span 1;
   }
 }
 

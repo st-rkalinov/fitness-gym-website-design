@@ -25,9 +25,9 @@ body {
     grid-template-columns: [full-start] 15rem [middle-start] repeat(3, [col-start] 1fr [col-end]) [middle-end full-end];
     grid-template-rows: [emptybar-start] 3.5vh [emptybar-end nav-start] 6vh
     [nav-end header-start] 110vh
-    [header-end about-us-start] 55vh
+    [header-end about-us-start] minmax(55vh, auto)
     [about-us-end our-thinking-start] minmax(33vh, auto)
-    [our-thinking-end opinions-start] 100vh
+    [our-thinking-end opinions-start] minmax(132vh, auto)
     [opinions-end features-start] 90vh
     [features-end quote1-start] 20vh
     [quote1-end thought-start] 70vh

@@ -22,7 +22,7 @@ body > * {
 .container {
   display: grid;
   grid-template-columns: [full-start] 15rem [middle-start] repeat(3, [col-start] 1fr [col-end]) [middle-end full-end];
-  grid-template-rows: [emptybar-start] 3.5vh [emptybar-end nav-start] 6vh [nav-end header-start] 110vh [header-end about-us-start] 55vh [about-us-end our-thinking-start] minmax(33vh, auto) [our-thinking-end opinions-start] 100vh [opinions-end features-start] 90vh [features-end quote1-start] 20vh [quote1-end thought-start] 70vh [thought-end tickets-start] 60vh [tickets-end cycle-start] 120vh [cycle-end events-start] 15vh [events-end quote2-start] 20vh [quote2-end footer-start] 50vh [footer-end];
+  grid-template-rows: [emptybar-start] 3.5vh [emptybar-end nav-start] 6vh [nav-end header-start] 110vh [header-end about-us-start] minmax(55vh, auto) [about-us-end our-thinking-start] minmax(33vh, auto) [our-thinking-end opinions-start] minmax(132vh, auto) [opinions-end features-start] 90vh [features-end quote1-start] 20vh [quote1-end thought-start] 70vh [thought-end tickets-start] 60vh [tickets-end cycle-start] 120vh [cycle-end events-start] 15vh [events-end quote2-start] 20vh [quote2-end footer-start] 50vh [footer-end];
 }
 
 .heading-1 {
@@ -40,6 +40,10 @@ body > * {
 }
 .heading-3--about-us {
   font-weight: 900;
+}
+.heading-3--opinions {
+  font-family: "Roboto", sans-serif;
+  grid-column: 2/span 1;
 }
 
 .heading-5 {
@@ -59,6 +63,43 @@ body > * {
   border-radius: 2.5rem;
   width: 25rem;
   margin: 0 auto;
+}
+
+.opinion-card {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template-rows: 1fr repeat(3, max-content) 1fr;
+  grid-template-columns: 1fr minmax(17.6rem, 1fr) 1fr;
+  grid-row-gap: 6rem;
+  justify-items: center;
+  color: white;
+}
+.opinion-card__title {
+  font-size: 1.67rem;
+  grid-row: 2/span 1;
+  grid-column: 2/span 1;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+.opinion-card__text {
+  font-size: 1.67rem;
+  font-family: "Lora", serif;
+  grid-row: 3/span 1;
+  grid-column: 2/span 1;
+}
+.opinion-card__author-info {
+  grid-row: 4/span 1;
+  grid-column: 2/span 1;
+  text-align: center;
+}
+.opinion-card__author {
+  font-size: 1.46rem;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+.opinion-card__author-position {
+  font-size: 1.46rem;
+  font-family: "Lora", serif;
 }
 
 .navigation {
@@ -152,7 +193,29 @@ body > * {
 }
 
 .section-opinions {
-  background-color: orange;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/section-opinions-background.png");
+  background-size: cover;
+  display: grid;
+  align-items: end;
+  justify-items: center;
+  grid-template-columns: minmax(5rem, 15rem) 1fr minmax(5rem, 10rem);
+  grid-template-rows: minmax(13rem, auto) minmax(7rem, auto) auto 1fr;
+  grid-row-gap: 5rem;
+}
+.section-opinions__text {
+  text-align: center;
+  padding: 0 13vw;
+  font-size: 2.1rem;
+  color: #3e3f3a;
+  grid-column: 2/span 1;
+}
+.section-opinions__opinions {
+  grid-column: 2/span 1;
+  justify-self: stretch;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+  grid-gap: 3rem;
+  padding-top: 5rem;
 }
 
 .section-features {

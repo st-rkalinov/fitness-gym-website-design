@@ -11,9 +11,10 @@
   text-align: center;
 
   &__text {
-    color: #3e3f3a;
+    color: $color-tertiary;
     font-size: 1.9rem;
     padding-top: 4rem;
+
   }
 }
 
@@ -37,7 +38,31 @@
 }
 
 .section-opinions {
-  background-color: orange;
+  background-image: linear-gradient(rgba($color-overlay, .3), rgba($color-overlay, .3)), url("../img/section-opinions-background.png");
+  background-size: cover;
+  display: grid;
+  align-items: end;
+  justify-items: center;
+  grid-template-columns: minmax($page-left-min-padding, $page-left-max-padding) 1fr minmax($page-right-min-padding, 10rem);
+  grid-template-rows: minmax(13rem, auto) minmax(7rem, auto) auto 1fr;
+  grid-row-gap: 5rem;
+
+  &__text {
+    text-align: center;
+    padding: 0 13vw;
+    font-size: 2.1rem;
+    color: $color-tertiary;
+    grid-column: 2 / span 1;
+  }
+
+  &__opinions {
+    grid-column: 2 / span 1;
+    justify-self: stretch;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+    grid-gap: 3rem;
+    padding-top: 5rem;
+  }
 }
 
 .section-features {
