@@ -18,7 +18,22 @@
 }
 
 .section-our-thinking {
-  background-color: brown;
+  background-color: #1b1b1b;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(29rem, 30rem));
+  justify-content: center;
+  grid-column-gap: 10rem;
+  grid-row-gap: 5rem;
+  justify-items: center;
+  align-items: center;
+  padding: 2rem $page-right-min-padding 2rem $page-left-min-padding;
+
+  &__text {
+    font-size: 1.6rem;
+    color: $color-primary;
+    padding-top: 2rem;
+  }
+
 }
 
 .section-opinions {

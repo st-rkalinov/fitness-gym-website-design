@@ -22,7 +22,7 @@ body > * {
 .container {
   display: grid;
   grid-template-columns: [full-start] 15rem [middle-start] repeat(3, [col-start] 1fr [col-end]) [middle-end full-end];
-  grid-template-rows: [emptybar-start] 3.5vh [emptybar-end nav-start] 6vh [nav-end header-start] 110vh [header-end about-us-start] 55vh [about-us-end our-thinking-start] 33vh [our-thinking-end opinions-start] 100vh [opinions-end features-start] 90vh [features-end quote1-start] 20vh [quote1-end thought-start] 70vh [thought-end tickets-start] 60vh [tickets-end cycle-start] 120vh [cycle-end events-start] 15vh [events-end quote2-start] 20vh [quote2-end footer-start] 50vh [footer-end];
+  grid-template-rows: [emptybar-start] 3.5vh [emptybar-end nav-start] 6vh [nav-end header-start] 110vh [header-end about-us-start] 55vh [about-us-end our-thinking-start] minmax(33vh, auto) [our-thinking-end opinions-start] 100vh [opinions-end features-start] 90vh [features-end quote1-start] 20vh [quote1-end thought-start] 70vh [thought-end tickets-start] 60vh [tickets-end cycle-start] 120vh [cycle-end events-start] 15vh [events-end quote2-start] 20vh [quote2-end footer-start] 50vh [footer-end];
 }
 
 .heading-1 {
@@ -40,6 +40,12 @@ body > * {
 }
 .heading-3--about-us {
   font-weight: 900;
+}
+
+.heading-5 {
+  font-size: 1.87rem;
+  font-weight: 700;
+  color: white;
 }
 
 .button {
@@ -129,7 +135,20 @@ body > * {
 }
 
 .section-our-thinking {
-  background-color: brown;
+  background-color: #1b1b1b;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(29rem, 30rem));
+  justify-content: center;
+  grid-column-gap: 10rem;
+  grid-row-gap: 5rem;
+  justify-items: center;
+  align-items: center;
+  padding: 2rem 5rem 2rem 5rem;
+}
+.section-our-thinking__text {
+  font-size: 1.6rem;
+  color: white;
+  padding-top: 2rem;
 }
 
 .section-opinions {
