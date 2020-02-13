@@ -1,5 +1,38 @@
 .navigation {
-  background-color: aquamarine;
+  background-color: #040404;
   grid-row: nav-start / nav-end;
   z-index: 1;
+
+  display: grid;
+  grid-template-columns: [full-start] minmax($page-left-min-padding, $page-left-max-padding)
+  [logo-start] min-content
+  [logo-end empty-area-start] minmax(10rem, 60rem)
+  [empty-area-end nav-container-start] max-content [nav-container-end] minmax($page-right-min-padding, 1fr) [full-end];
+  align-items: center;
+
+  &__logo {
+    grid-column: 2 / 3;
+  }
+
+  &__items {
+    list-style: none;
+    grid-column: nav-container-start / nav-container-end;
+    display: grid;
+    grid-template-columns: repeat(4, min-content);
+    grid-column-gap: 10rem;
+    text-transform: uppercase;
+    justify-items: center;
+    font-weight: 500;
+  }
+
+  &__item {
+    font-size: 1.9rem;
+     font-weight: 500;
+
+    a {
+      color: $color-primary;
+      text-decoration: none;
+
+    }
+  }
 }

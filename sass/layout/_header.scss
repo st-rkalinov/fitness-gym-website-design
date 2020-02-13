@@ -4,7 +4,7 @@
   background-position: center center;
   grid-row: emptybar-start / header-end;
   display: grid;
-  grid-template-columns: 1fr 45vw 1fr;
+  grid-template-columns: 1fr minmax(min-content, 45vw) 1fr;
   grid-template-rows: 25vh 1fr;
   align-items: center;
   text-align: center;

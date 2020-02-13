@@ -22,7 +22,7 @@ body > * {
 .container {
   display: grid;
   grid-template-columns: [full-start] 15rem [middle-start] repeat(3, [col-start] 1fr [col-end]) [middle-end full-end];
-  grid-template-rows: [emptybar-start] 3.5vh [emptybar-end nav-start] 4vh [nav-end header-start] 110vh [header-end about-us-start] 60vh [about-us-end our-thinking-start] 33vh [our-thinking-end opinions-start] 100vh [opinions-end features-start] 90vh [features-end quote1-start] 20vh [quote1-end thought-start] 70vh [thought-end tickets-start] 60vh [tickets-end cycle-start] 120vh [cycle-end events-start] 15vh [events-end quote2-start] 20vh [quote2-end footer-start] 50vh [footer-end];
+  grid-template-rows: [emptybar-start] 3.5vh [emptybar-end nav-start] 6vh [nav-end header-start] 110vh [header-end about-us-start] 55vh [about-us-end our-thinking-start] 33vh [our-thinking-end opinions-start] 100vh [opinions-end features-start] 90vh [features-end quote1-start] 20vh [quote1-end thought-start] 70vh [thought-end tickets-start] 60vh [tickets-end cycle-start] 120vh [cycle-end events-start] 15vh [events-end quote2-start] 20vh [quote2-end footer-start] 50vh [footer-end];
 }
 
 .heading-1 {
@@ -30,6 +30,15 @@ body > * {
   mix-blend-mode: lighten;
   text-shadow: 0 0 5px white, 0 0 10px white, 0 0 10px white;
   -webkit-text-stroke: 3px white;
+  font-weight: 900;
+}
+
+.heading-3 {
+  font-size: 2.9rem;
+  color: #3e3f3a;
+  text-transform: uppercase;
+}
+.heading-3--about-us {
   font-weight: 900;
 }
 
@@ -47,9 +56,33 @@ body > * {
 }
 
 .navigation {
-  background-color: aquamarine;
+  background-color: #040404;
   grid-row: nav-start/nav-end;
   z-index: 1;
+  display: grid;
+  grid-template-columns: [full-start] minmax(5rem, 15rem) [logo-start] min-content [logo-end empty-area-start] minmax(10rem, 60rem) [empty-area-end nav-container-start] max-content [nav-container-end] minmax(5rem, 1fr) [full-end];
+  align-items: center;
+}
+.navigation__logo {
+  grid-column: 2/3;
+}
+.navigation__items {
+  list-style: none;
+  grid-column: nav-container-start/nav-container-end;
+  display: grid;
+  grid-template-columns: repeat(4, min-content);
+  grid-column-gap: 10rem;
+  text-transform: uppercase;
+  justify-items: center;
+  font-weight: 500;
+}
+.navigation__item {
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+.navigation__item a {
+  color: white;
+  text-decoration: none;
 }
 
 .header {
@@ -58,7 +91,7 @@ body > * {
   background-position: center center;
   grid-row: emptybar-start/header-end;
   display: grid;
-  grid-template-columns: 1fr 45vw 1fr;
+  grid-template-columns: 1fr minmax(min-content, 45vw) 1fr;
   grid-template-rows: 25vh 1fr;
   align-items: center;
   text-align: center;
@@ -78,9 +111,21 @@ body > * {
 }
 
 .section-about-us {
-  background-color: azure;
+  background-color: #000000;
   grid-row: about-us-start/about-us-end;
   grid-column: full-start/full-end;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 0 26%;
+  margin: 0 auto;
+  text-align: center;
+}
+.section-about-us__text {
+  color: #3e3f3a;
+  font-size: 1.9rem;
+  padding-top: 4rem;
 }
 
 .section-our-thinking {

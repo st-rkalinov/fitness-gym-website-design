@@ -1,7 +1,20 @@
 .section-about-us {
-  background-color: azure;
+  background-color: #000000;
   grid-row: about-us-start / about-us-end;
   grid-column: full-start / full-end;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 0 26%;
+  margin: 0 auto;
+  text-align: center;
+
+  &__text {
+    color: #3e3f3a;
+    font-size: 1.9rem;
+    padding-top: 4rem;
+  }
 }
 
 .section-our-thinking {

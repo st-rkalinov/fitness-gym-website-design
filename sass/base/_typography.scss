@@ -5,3 +5,13 @@
   -webkit-text-stroke: 3px white;
   font-weight: 900;
 }
+
+.heading-3 {
+  font-size: 2.9rem;
+  color: #3e3f3a;
+  text-transform: uppercase;
+
+  &--about-us {
+    font-weight: 900;
+  }
+}

@@ -23,9 +23,9 @@ body {
 .container {
     display: grid;
     grid-template-columns: [full-start] 15rem [middle-start] repeat(3, [col-start] 1fr [col-end]) [middle-end full-end];
-    grid-template-rows: [emptybar-start] 3.5vh [emptybar-end nav-start] 4vh
+    grid-template-rows: [emptybar-start] 3.5vh [emptybar-end nav-start] 6vh
     [nav-end header-start] 110vh
-    [header-end about-us-start] 60vh
+    [header-end about-us-start] 55vh
     [about-us-end our-thinking-start] 33vh
     [our-thinking-end opinions-start] 100vh
     [opinions-end features-start] 90vh
