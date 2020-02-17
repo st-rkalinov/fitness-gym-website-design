@@ -9,6 +9,11 @@ $font-secondary: 'Roboto', sans-serif;
 $font-tertiary: 'Lora', serif;
 
 //PADDINGS
+$section-base-left-padding: 12.4rem;
+$section-base-right-padding: $section-base-left-padding;
+$section-content-left-padding: 2.7rem;
+$section-content-right-padding: $section-content-left-padding;
+
 $page-left-min-padding: 5rem;
-$page-left-max-padding: 15rem;
+$page-left-max-padding: 12.2rem;
 $page-right-min-padding: 5rem;

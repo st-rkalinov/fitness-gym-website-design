@@ -1,14 +1,21 @@
 .section-about-us {
+  @include section-padding($section-content-left-padding, $section-content-right-padding);
+
   background-color: #000000;
   grid-row: about-us-start / about-us-end;
-  grid-column: full-start / full-end;
   display: flex;
   justify-content: center;
   align-content: center;
-  flex-direction: column;
-  padding: 0 26%;
-  margin: 0 auto;
-  text-align: center;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 66%;
+    margin: 0 auto;
+    text-align: center;
+  }
 
   &__text {
     color: $color-tertiary;
@@ -19,15 +26,15 @@
 }
 
 .section-our-thinking {
+  @include section-padding($section-content-left-padding, $section-content-right-padding);
+
   background-color: #1b1b1b;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(29rem, 30rem));
   justify-content: center;
   grid-column-gap: 10rem;
-  grid-row-gap: 5rem;
-  justify-items: center;
+  grid-row-gap: 3rem;
   align-items: center;
-  padding: 2rem $page-right-min-padding 2rem $page-left-min-padding;
 
   &__text {
     font-size: 1.6rem;
@@ -35,28 +42,35 @@
     padding-top: 2rem;
   }
 
+  &__box {
+    padding: 2rem 0;
+  }
+
 }
 
 .section-opinions {
+  @include section-padding();
   background-image: linear-gradient(rgba($color-overlay, .3), rgba($color-overlay, .3)), url("../img/section-opinions-background.png");
+
   background-size: cover;
   display: grid;
   align-items: end;
   justify-items: center;
-  grid-template-columns: minmax($page-left-min-padding, $page-left-max-padding) 1fr minmax($page-right-min-padding, 10rem);
+  justify-content: center;
+  grid-template-columns: 1fr;
   grid-template-rows: minmax(13rem, auto) minmax(7rem, auto) auto 1fr;
   grid-row-gap: 5rem;
 
   &__text {
     text-align: center;
-    padding: 0 13vw;
+    padding: 0 16%;
     font-size: 2.1rem;
     color: $color-tertiary;
-    grid-column: 2 / span 1;
+    grid-column: 1 / -1;
   }
 
   &__opinions {
-    grid-column: 2 / span 1;
+    grid-column: 1 / -1;
     justify-self: stretch;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));

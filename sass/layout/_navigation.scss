@@ -1,28 +1,31 @@
 .navigation {
+  @include section-padding($section-content-left-padding, $section-content-right-padding);
+
   background-color: #040404;
   grid-row: nav-start / nav-end;
   z-index: 1;
 
   display: grid;
-  grid-template-columns: [full-start] minmax($page-left-min-padding, $page-left-max-padding)
-  [logo-start] min-content
-  [logo-end empty-area-start] minmax(10rem, 60rem)
-  [empty-area-end nav-container-start] max-content [nav-container-end] minmax($page-right-min-padding, 1fr) [full-end];
+  grid-template-columns: min-content minmax(max-content, 50.7rem);
   align-items: center;
+  justify-content: space-between;
 
   &__logo {
-    grid-column: 2 / 3;
+    grid-column: 1 / span 1;
   }
 
   &__items {
     list-style: none;
-    grid-column: nav-container-start / nav-container-end;
+    grid-column: 2 / span 1;
     display: grid;
-    grid-template-columns: repeat(4, min-content);
-    grid-column-gap: 10rem;
+    grid-template-columns: repeat(4, max-content);
     text-transform: uppercase;
-    justify-items: center;
+    justify-content: space-between;
     font-weight: 500;
+  }
+
+  &__item:first-child {
+    justify-self: start;
   }
 
   &__item {

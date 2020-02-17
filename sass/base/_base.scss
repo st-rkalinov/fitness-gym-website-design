@@ -14,18 +14,19 @@ body {
     box-sizing: border-box;
     font-family: $font-primary;
     font-weight: 400;
+    overflow-x: hidden;
 
     > * {
-        grid-column: full-start / full-end;
+        grid-column: 1 / -1;
     }
 }
 
 .container {
     display: grid;
-    grid-template-columns: [full-start] 15rem [middle-start] repeat(3, [col-start] 1fr [col-end]) [middle-end full-end];
-    grid-template-rows: [emptybar-start] 3.5vh [emptybar-end nav-start] 6vh
-    [nav-end header-start] 110vh
-    [header-end about-us-start] minmax(55vh, auto)
+    grid-template-columns: 100vw;
+    grid-template-rows: [emptybar-start] 4.2rem [emptybar-end nav-start] 5.5rem
+    [nav-end header-start] minmax(100vh, auto)
+    [header-end about-us-start] minmax(50vh, auto)
     [about-us-end our-thinking-start] minmax(33vh, auto)
     [our-thinking-end opinions-start] minmax(132vh, auto)
     [opinions-end features-start] 90vh
