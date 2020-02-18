@@ -162,7 +162,31 @@
 }
 
 .section-tickets {
-  background-color: darkgreen;
+  @include section-padding($section-content-left-padding, $section-content-right-padding);
+  background-image: url("../img/section-tickets-background.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  &__content {
+    width: 38%;
+    color: $color-primary;
+    text-align: right;
+  }
+
+  &__heading {
+    font-size: 5.83rem;
+    font-family: $font-secondary;
+    font-weight: 700;
+    line-height: 5rem;
+  }
+
+  &__text {
+    font-size: 1.67rem;
+    font-family: $font-secondary;
+    padding-top: 2rem;
+  }
 }
 
 .section-cycle {

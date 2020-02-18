@@ -23,7 +23,7 @@ body > * {
 .container {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: [emptybar-start] 4.2rem [emptybar-end nav-start] 5.5rem [nav-end header-start] minmax(100vh, auto) [header-end about-us-start] minmax(50vh, auto) [about-us-end our-thinking-start] minmax(33vh, auto) [our-thinking-end opinions-start] minmax(132vh, auto) [opinions-end features-start] minmax(90vh, auto) [features-end quote1-start] minmax(20vh, auto) [quote1-end thought-start] 70vh [thought-end tickets-start] 60vh [tickets-end cycle-start] 120vh [cycle-end events-start] 15vh [events-end quote2-start] minmax(20vh, auto) [quote2-end footer-start] 50vh [footer-end];
+  grid-template-rows: [emptybar-start] 4.2rem [emptybar-end nav-start] 5.5rem [nav-end header-start] minmax(100vh, auto) [header-end about-us-start] minmax(50vh, auto) [about-us-end our-thinking-start] minmax(33vh, auto) [our-thinking-end opinions-start] minmax(132vh, auto) [opinions-end features-start] minmax(90vh, auto) [features-end quote1-start] minmax(20vh, auto) [quote1-end thought-start] 70vh [thought-end tickets-start] minmax(76vh, auto) [tickets-end cycle-start] 120vh [cycle-end events-start] 15vh [events-end quote2-start] minmax(20vh, auto) [quote2-end footer-start] 50vh [footer-end];
 }
 
 .heading-1 {
@@ -75,13 +75,22 @@ body > * {
   text-transform: uppercase;
   color: #3ea2d8;
   font-family: "Roboto", sans-serif;
+  font-weight: 700;
   font-size: 2.5rem;
   cursor: pointer;
-  padding: 1.3rem 5.2rem;
+  padding: 1.2rem 5.2rem;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 2.5rem;
   width: 25.7rem;
   margin: 0 auto;
+  text-align: center;
+}
+.button--tickets {
+  width: 19rem;
+  color: #00c0ff;
+  font-weight: 400;
+  float: right;
+  margin-top: 6rem;
 }
 
 .opinion-card {
@@ -98,6 +107,7 @@ body > * {
   grid-row: 2/span 1;
   grid-column: 2/span 1;
   font-family: "Roboto", sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
 }
 .opinion-card__text {
@@ -114,6 +124,7 @@ body > * {
 .opinion-card__author {
   font-size: 1.46rem;
   font-family: "Roboto", sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
 }
 .opinion-card__author-position {
@@ -351,7 +362,29 @@ body > * {
 }
 
 .section-tickets {
-  background-color: darkgreen;
+  padding-left: 15.1rem;
+  padding-right: 15.1rem;
+  background-image: url("../img/section-tickets-background.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.section-tickets__content {
+  width: 38%;
+  color: white;
+  text-align: right;
+}
+.section-tickets__heading {
+  font-size: 5.83rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 5rem;
+}
+.section-tickets__text {
+  font-size: 1.67rem;
+  font-family: "Roboto", sans-serif;
+  padding-top: 2rem;
 }
 
 .section-cycle {
