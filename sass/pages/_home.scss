@@ -128,11 +128,21 @@
     font-size: 2.08rem;
     line-height: 3rem;
     padding: 0 13rem;
+
+    &--darker {
+      color: $color-tertiary;
+      font-weight: 400;
+    }
   }
 
   &__author {
     font-size: 1.87rem;
     padding-top: 5rem;
+  }
+
+  &--darker {
+    background-color: black;
+    padding-bottom: 10rem;
   }
 }
 
@@ -198,5 +208,33 @@
 }
 
 .section-events {
-  background-color: $color-tertiary;
+  @include section-padding($section-content-left-padding, $section-content-right-padding);
+  background-color: #1b1b1b;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__event-container {
+    padding: 5rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 2.08rem;
+    color: $color-primary;
+  }
+
+  &__date {
+    color: $color-tertiary;
+    font-size: 1.67rem;
+    line-height: 3rem;
+  }
+
 }

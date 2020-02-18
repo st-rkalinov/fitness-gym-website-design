@@ -23,7 +23,7 @@ body > * {
 .container {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: [emptybar-start] 4.2rem [emptybar-end nav-start] 5.5rem [nav-end header-start] minmax(100vh, auto) [header-end about-us-start] minmax(50vh, auto) [about-us-end our-thinking-start] minmax(33vh, auto) [our-thinking-end opinions-start] minmax(132vh, auto) [opinions-end features-start] minmax(90vh, auto) [features-end quote1-start] minmax(20vh, auto) [quote1-end thought-start] 70vh [thought-end tickets-start] minmax(76vh, auto) [tickets-end regime-start] minmax(120vh, auto) [regime-end events-start] 15vh [events-end quote2-start] minmax(20vh, auto) [quote2-end footer-start] 50vh [footer-end];
+  grid-template-rows: [emptybar-start] 4.2rem [emptybar-end nav-start] 5.5rem [nav-end header-start] minmax(100vh, auto) [header-end about-us-start] minmax(50vh, auto) [about-us-end our-thinking-start] minmax(33vh, auto) [our-thinking-end opinions-start] minmax(132vh, auto) [opinions-end features-start] minmax(90vh, auto) [features-end quote1-start] minmax(20vh, auto) [quote1-end thought-start] 70vh [thought-end tickets-start] minmax(76vh, auto) [tickets-end regime-start] minmax(120vh, auto) [regime-end events-start] minmax(15vh, auto) [events-end quote2-start] minmax(20vh, auto) [quote2-end footer-start] 50vh [footer-end];
 }
 
 .heading-1 {
@@ -361,9 +361,17 @@ body > * {
   line-height: 3rem;
   padding: 0 13rem;
 }
+.section-quote__text--darker {
+  color: #3e3f3a;
+  font-weight: 400;
+}
 .section-quote__author {
   font-size: 1.87rem;
   padding-top: 5rem;
+}
+.section-quote--darker {
+  background-color: black;
+  padding-bottom: 10rem;
 }
 
 .section-thought {
@@ -423,7 +431,31 @@ body > * {
 }
 
 .section-events {
-  background-color: #3e3f3a;
+  padding-left: 15.1rem;
+  padding-right: 15.1rem;
+  background-color: #1b1b1b;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.section-events__event-container {
+  padding: 5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.section-events__title {
+  font-size: 2.08rem;
+  color: white;
+}
+.section-events__date {
+  color: #3e3f3a;
+  font-size: 1.67rem;
+  line-height: 3rem;
 }
 
 /*# sourceMappingURL=style.comp.css.map */

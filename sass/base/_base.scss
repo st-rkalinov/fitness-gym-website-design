@@ -34,7 +34,7 @@ body {
     [quote1-end thought-start] 70vh
     [thought-end tickets-start] minmax(76vh, auto)
     [tickets-end regime-start] minmax(120vh, auto)
-    [regime-end events-start] 15vh
+    [regime-end events-start] minmax(15vh, auto)
     [events-end quote2-start] minmax(20vh, auto)
     [quote2-end footer-start] 50vh [footer-end];
 }
