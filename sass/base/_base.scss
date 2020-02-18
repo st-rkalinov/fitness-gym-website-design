@@ -29,12 +29,12 @@ body {
     [header-end about-us-start] minmax(50vh, auto)
     [about-us-end our-thinking-start] minmax(33vh, auto)
     [our-thinking-end opinions-start] minmax(132vh, auto)
-    [opinions-end features-start] 90vh
-    [features-end quote1-start] 20vh
+    [opinions-end features-start] minmax(90vh, auto)
+    [features-end quote1-start] minmax(20vh, auto)
     [quote1-end thought-start] 70vh
     [thought-end tickets-start] 60vh
     [tickets-end cycle-start] 120vh
     [cycle-end events-start] 15vh
-    [events-end quote2-start] 20vh
+    [events-end quote2-start] minmax(20vh, auto)
     [quote2-end footer-start] 50vh [footer-end];
 }

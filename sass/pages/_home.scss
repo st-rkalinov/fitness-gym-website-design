@@ -80,11 +80,60 @@
 }
 
 .section-features {
-  background-color: aqua;
+  @include section-padding($section-content-left-padding, $section-content-right-padding);
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: #000000;
+
+  &__info {
+    width: 62%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 1.875rem;
+    line-height: 3rem;
+    color: $color-tertiary;
+    padding-bottom: 10rem;
+  }
+
+  &__types {
+    list-style: none;
+    color: $color-tertiary;
+    font-size: 1.67rem;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  &__features {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12rem;
+  }
 }
 
 .section-quote {
-  background-color: chartreuse;
+  @include section-padding($section-content-left-padding, $section-content-right-padding);
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  background-color: #1b1b1b;
+  color: $color-primary;
+  text-align: center;
+  font-weight: 500;
+
+  &__text {
+    font-size: 2.08rem;
+    line-height: 3rem;
+    padding: 0 13rem;
+  }
+
+  &__author {
+    font-size: 1.87rem;
+    padding-top: 5rem;
+  }
 }
 
 .section-thought {

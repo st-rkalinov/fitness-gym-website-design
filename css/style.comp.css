@@ -23,7 +23,7 @@ body > * {
 .container {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: [emptybar-start] 4.2rem [emptybar-end nav-start] 5.5rem [nav-end header-start] minmax(100vh, auto) [header-end about-us-start] minmax(50vh, auto) [about-us-end our-thinking-start] minmax(33vh, auto) [our-thinking-end opinions-start] minmax(132vh, auto) [opinions-end features-start] 90vh [features-end quote1-start] 20vh [quote1-end thought-start] 70vh [thought-end tickets-start] 60vh [tickets-end cycle-start] 120vh [cycle-end events-start] 15vh [events-end quote2-start] 20vh [quote2-end footer-start] 50vh [footer-end];
+  grid-template-rows: [emptybar-start] 4.2rem [emptybar-end nav-start] 5.5rem [nav-end header-start] minmax(100vh, auto) [header-end about-us-start] minmax(50vh, auto) [about-us-end our-thinking-start] minmax(33vh, auto) [our-thinking-end opinions-start] minmax(132vh, auto) [opinions-end features-start] minmax(90vh, auto) [features-end quote1-start] minmax(20vh, auto) [quote1-end thought-start] 70vh [thought-end tickets-start] 60vh [tickets-end cycle-start] 120vh [cycle-end events-start] 15vh [events-end quote2-start] minmax(20vh, auto) [quote2-end footer-start] 50vh [footer-end];
 }
 
 .heading-1 {
@@ -45,6 +45,17 @@ body > * {
 .heading-3--opinions {
   font-family: "Roboto", sans-serif;
   grid-column: 1/-1;
+}
+.heading-3--features {
+  font-weight: 500;
+  padding-bottom: 3rem;
+}
+
+.heading-4 {
+  font-size: 2.5rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .heading-5 {
@@ -101,6 +112,32 @@ body > * {
 .opinion-card__author-position {
   font-size: 1.46rem;
   font-family: "Lora", serif;
+}
+
+.feature {
+  text-align: center;
+  width: 25%;
+  display: grid;
+  grid-template-rows: 15rem repeat(3, max-content);
+  grid-row-gap: 5rem;
+  justify-items: center;
+  align-items: end;
+}
+.feature__text {
+  font-size: 1.67rem;
+  color: white;
+  padding: 0 6rem;
+}
+.feature__author-info {
+  color: white;
+}
+.feature__author {
+  text-transform: uppercase;
+  font-size: 1.46rem;
+  font-weight: 700;
+}
+.feature__author-position {
+  font-size: 1.46rem;
 }
 
 .navigation {
@@ -233,11 +270,56 @@ body > * {
 }
 
 .section-features {
-  background-color: aqua;
+  padding-left: 15.1rem;
+  padding-right: 15.1rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: #000000;
+}
+.section-features__info {
+  width: 62%;
+  margin: 0 auto;
+  text-align: center;
+}
+.section-features__text {
+  font-size: 1.875rem;
+  line-height: 3rem;
+  color: #3e3f3a;
+  padding-bottom: 10rem;
+}
+.section-features__types {
+  list-style: none;
+  color: #3e3f3a;
+  font-size: 1.67rem;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: 0 auto;
+}
+.section-features__features {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12rem;
 }
 
 .section-quote {
-  background-color: chartreuse;
+  padding-left: 15.1rem;
+  padding-right: 15.1rem;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  background-color: #1b1b1b;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+}
+.section-quote__text {
+  font-size: 2.08rem;
+  line-height: 3rem;
+  padding: 0 13rem;
+}
+.section-quote__author {
+  font-size: 1.87rem;
+  padding-top: 5rem;
 }
 
 .section-thought {

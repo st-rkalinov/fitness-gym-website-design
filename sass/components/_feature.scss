@@ -1,0 +1,29 @@
+.feature {
+  text-align: center;
+  width: 25%;
+  display: grid;
+  grid-template-rows: 15rem repeat(3, max-content);
+  grid-row-gap: 5rem;
+  justify-items: center;
+  align-items: end;
+
+  &__text {
+    font-size: 1.67rem;
+    color: $color-primary;
+    padding: 0 6rem;
+  }
+
+  &__author-info {
+    color: $color-primary;
+  }
+
+  &__author {
+    text-transform: uppercase;
+    font-size: 1.46rem;
+    font-weight: 700;
+  }
+
+  &__author-position {
+    font-size: 1.46rem;
+  }
+}
