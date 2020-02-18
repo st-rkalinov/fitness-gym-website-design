@@ -36,5 +36,5 @@ body {
     [tickets-end regime-start] minmax(120vh, auto)
     [regime-end events-start] minmax(15vh, auto)
     [events-end quote2-start] minmax(20vh, auto)
-    [quote2-end footer-start] 50vh [footer-end];
+    [quote2-end footer-start] minmax(45vh, auto) [footer-end];
 }

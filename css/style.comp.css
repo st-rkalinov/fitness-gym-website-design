@@ -23,7 +23,7 @@ body > * {
 .container {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: [emptybar-start] 4.2rem [emptybar-end nav-start] 5.5rem [nav-end header-start] minmax(100vh, auto) [header-end about-us-start] minmax(50vh, auto) [about-us-end our-thinking-start] minmax(33vh, auto) [our-thinking-end opinions-start] minmax(132vh, auto) [opinions-end features-start] minmax(90vh, auto) [features-end quote1-start] minmax(20vh, auto) [quote1-end thought-start] 70vh [thought-end tickets-start] minmax(76vh, auto) [tickets-end regime-start] minmax(120vh, auto) [regime-end events-start] minmax(15vh, auto) [events-end quote2-start] minmax(20vh, auto) [quote2-end footer-start] 50vh [footer-end];
+  grid-template-rows: [emptybar-start] 4.2rem [emptybar-end nav-start] 5.5rem [nav-end header-start] minmax(100vh, auto) [header-end about-us-start] minmax(50vh, auto) [about-us-end our-thinking-start] minmax(33vh, auto) [our-thinking-end opinions-start] minmax(132vh, auto) [opinions-end features-start] minmax(90vh, auto) [features-end quote1-start] minmax(20vh, auto) [quote1-end thought-start] 70vh [thought-end tickets-start] minmax(76vh, auto) [tickets-end regime-start] minmax(120vh, auto) [regime-end events-start] minmax(15vh, auto) [events-end quote2-start] minmax(20vh, auto) [quote2-end footer-start] minmax(45vh, auto) [footer-end];
 }
 
 .heading-1 {
@@ -252,6 +252,7 @@ body > * {
   display: flex;
   font-family: "Roboto", sans-serif;
   align-items: center;
+  flex-wrap: wrap;
 }
 .footer > * {
   width: 50%;
@@ -519,6 +520,11 @@ body > * {
   color: #3e3f3a;
   font-size: 1.67rem;
   line-height: 3rem;
+}
+
+.bottom-line {
+  height: 3rem;
+  background-color: #059fd1;
 }
 
 /*# sourceMappingURL=style.comp.css.map */
