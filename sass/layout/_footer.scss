@@ -1,3 +1,69 @@
 .footer {
-  background-color: darkblue;
+  @include section-padding($section-content-left-padding, $section-content-right-padding);
+  background-color: #1b1b1b;
+  display: flex;
+  font-family: $font-secondary;
+  align-items: center;
+
+  & > * {
+    width: 50%;
+  }
+
+  &__socials-text {
+    color: $color-tertiary;
+    font-size: 1.875rem;
+    line-height: 2.9rem;
+    padding: 2rem 23rem 2rem 0;
+  }
+
+  &__socials-list {
+    list-style: none;
+    display: flex;
+  }
+
+  &__socials-item {
+    width: 3.3rem;
+    height: 3.3rem;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+  &__socials-icon {
+    width: 100%;
+  }
+
+  &__nav-container {
+    display: flex;
+  }
+
+  &__nav-column {
+    font-size: 2.08rem;
+    font-family: $font-secondary;
+
+    &:not(:last-child) {
+      margin-right: 10rem;
+    }
+  }
+
+  &__nav-column-title {
+    font-weight: 700;
+    color: $color-tertiary;
+    text-transform: uppercase;
+    padding-bottom: 4.5rem;
+  }
+
+  &__nav-list {
+    list-style: none;
+  }
+
+  &__nav-item {
+    line-height: 3rem;
+  }
+
+  &__nav-link {
+    text-decoration: none;
+    color: $color-tertiary;
+  }
 }

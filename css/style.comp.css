@@ -64,6 +64,11 @@ body > * {
   text-transform: uppercase;
   font-weight: 700;
 }
+.heading-4--socials {
+  line-height: 3rem;
+  color: #3e3f3a;
+  font-weight: 700;
+}
 
 .heading-5 {
   font-size: 1.87rem;
@@ -238,6 +243,64 @@ body > * {
   color: white;
   padding-top: 2.2rem;
   padding-bottom: 10rem;
+}
+
+.footer {
+  padding-left: 15.1rem;
+  padding-right: 15.1rem;
+  background-color: #1b1b1b;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+}
+.footer > * {
+  width: 50%;
+}
+.footer__socials-text {
+  color: #3e3f3a;
+  font-size: 1.875rem;
+  line-height: 2.9rem;
+  padding: 2rem 23rem 2rem 0;
+}
+.footer__socials-list {
+  list-style: none;
+  display: flex;
+}
+.footer__socials-item {
+  width: 3.3rem;
+  height: 3.3rem;
+}
+.footer__socials-item:not(:last-child) {
+  margin-right: 1rem;
+}
+.footer__socials-icon {
+  width: 100%;
+}
+.footer__nav-container {
+  display: flex;
+}
+.footer__nav-column {
+  font-size: 2.08rem;
+  font-family: "Roboto", sans-serif;
+}
+.footer__nav-column:not(:last-child) {
+  margin-right: 10rem;
+}
+.footer__nav-column-title {
+  font-weight: 700;
+  color: #3e3f3a;
+  text-transform: uppercase;
+  padding-bottom: 4.5rem;
+}
+.footer__nav-list {
+  list-style: none;
+}
+.footer__nav-item {
+  line-height: 3rem;
+}
+.footer__nav-link {
+  text-decoration: none;
+  color: #3e3f3a;
 }
 
 .section-about-us {
