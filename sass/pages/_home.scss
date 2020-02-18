@@ -189,10 +189,14 @@
   }
 }
 
-.section-cycle {
-  background-color: darkorchid;
+.section-regime {
+  @include section-padding($section-content-left-padding, $section-content-right-padding);
+  color: $color-primary;
+  background-color: black;
+  padding-top: 13rem;
+  padding-bottom: 13rem;
 }
 
 .section-events {
-  background-color: darkslategray;
+  background-color: $color-tertiary;
 }

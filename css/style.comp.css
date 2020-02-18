@@ -23,7 +23,7 @@ body > * {
 .container {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: [emptybar-start] 4.2rem [emptybar-end nav-start] 5.5rem [nav-end header-start] minmax(100vh, auto) [header-end about-us-start] minmax(50vh, auto) [about-us-end our-thinking-start] minmax(33vh, auto) [our-thinking-end opinions-start] minmax(132vh, auto) [opinions-end features-start] minmax(90vh, auto) [features-end quote1-start] minmax(20vh, auto) [quote1-end thought-start] 70vh [thought-end tickets-start] minmax(76vh, auto) [tickets-end cycle-start] 120vh [cycle-end events-start] 15vh [events-end quote2-start] minmax(20vh, auto) [quote2-end footer-start] 50vh [footer-end];
+  grid-template-rows: [emptybar-start] 4.2rem [emptybar-end nav-start] 5.5rem [nav-end header-start] minmax(100vh, auto) [header-end about-us-start] minmax(50vh, auto) [about-us-end our-thinking-start] minmax(33vh, auto) [our-thinking-end opinions-start] minmax(132vh, auto) [opinions-end features-start] minmax(90vh, auto) [features-end quote1-start] minmax(20vh, auto) [quote1-end thought-start] 70vh [thought-end tickets-start] minmax(76vh, auto) [tickets-end regime-start] minmax(120vh, auto) [regime-end events-start] 15vh [events-end quote2-start] minmax(20vh, auto) [quote2-end footer-start] 50vh [footer-end];
 }
 
 .heading-1 {
@@ -156,6 +156,32 @@ body > * {
 }
 .feature__author-position {
   font-size: 1.46rem;
+}
+
+.regime-box {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 10rem 0;
+}
+.regime-box > * {
+  width: 50%;
+}
+.regime-box__info {
+  padding: 0 8rem;
+}
+.regime-box__date {
+  font-size: 1.67rem;
+}
+.regime-box__text {
+  font-size: 1.67rem;
+  padding-top: 4rem;
+}
+.regime-box__title {
+  font-size: 2.08rem;
+  font-weight: 500;
+  padding-top: 1rem;
+  text-transform: uppercase;
 }
 
 .navigation {
@@ -387,12 +413,17 @@ body > * {
   padding-top: 2rem;
 }
 
-.section-cycle {
-  background-color: darkorchid;
+.section-regime {
+  padding-left: 15.1rem;
+  padding-right: 15.1rem;
+  color: white;
+  background-color: black;
+  padding-top: 13rem;
+  padding-bottom: 13rem;
 }
 
 .section-events {
-  background-color: darkslategray;
+  background-color: #3e3f3a;
 }
 
 /*# sourceMappingURL=style.comp.css.map */
