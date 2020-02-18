@@ -137,7 +137,28 @@
 }
 
 .section-thought {
-  background-color: cornflowerblue;
+  background-color: black;
+  display: flex;
+
+  & > * {
+    width: 50%;
+  }
+
+  &__info {
+    padding: 17rem 7rem 0 $section-base-left-padding + $section-content-left-padding;
+  }
+
+  &__img {
+    background-image: url("../img/thought-image.png");
+    background-size: cover;
+  }
+
+  &__text {
+    color: $color-tertiary;
+    font-size: 1.87rem;
+    line-height: 3rem;
+    padding-top: 2rem;
+  }
 }
 
 .section-tickets {

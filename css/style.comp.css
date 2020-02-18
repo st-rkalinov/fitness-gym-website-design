@@ -34,6 +34,13 @@ body > * {
   font-weight: 900;
 }
 
+.heading-2 {
+  font-size: 3.75rem;
+  color: #3e3f3a;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 .heading-3 {
   font-size: 2.9rem;
   color: #3e3f3a;
@@ -323,7 +330,24 @@ body > * {
 }
 
 .section-thought {
-  background-color: cornflowerblue;
+  background-color: black;
+  display: flex;
+}
+.section-thought > * {
+  width: 50%;
+}
+.section-thought__info {
+  padding: 17rem 7rem 0 15.1rem;
+}
+.section-thought__img {
+  background-image: url("../img/thought-image.png");
+  background-size: cover;
+}
+.section-thought__text {
+  color: #3e3f3a;
+  font-size: 1.87rem;
+  line-height: 3rem;
+  padding-top: 2rem;
 }
 
 .section-tickets {
