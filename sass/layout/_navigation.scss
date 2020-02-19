@@ -6,13 +6,14 @@
   z-index: 1;
 
   display: grid;
-  grid-template-columns: min-content minmax(max-content, 50.7rem);
+  grid-template-columns: max-content minmax(max-content, 50.7rem);
   align-items: center;
   justify-content: space-between;
 
-  &__logo {
+  &__logo-container {
     grid-column: 1 / span 1;
   }
+
 
   &__items {
     list-style: none;
@@ -30,12 +31,42 @@
 
   &__item {
     font-size: 1.9rem;
-     font-weight: 500;
+    font-weight: 500;
 
     a {
       color: $color-primary;
       text-decoration: none;
 
+    }
+  }
+
+  @include respond(bp-large) {
+    &__logo {
+      display: block;
+      width: 75%;
+    }
+  }
+
+  @include respond(bp-small) {
+    &__logo {
+      display: block;
+      width: 60%;
+    }
+  }
+
+  @include respond(bp-xs-small) {
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+    align-content: center;
+
+
+    &__logo-container {
+      display: none;
+    }
+
+    &__items {
+      grid-row: 1 / -1;
+      grid-column: 1 / -1;
     }
   }
 }

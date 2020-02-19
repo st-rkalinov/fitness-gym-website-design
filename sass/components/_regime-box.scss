@@ -2,6 +2,7 @@
   display: flex;
   text-align: center;
   align-items: center;
+  flex-wrap: wrap;
   padding: 10rem 0;
 
   & > * {
@@ -28,4 +29,21 @@
     text-transform: uppercase;
   }
 
+  @include respond(bp-medium) {
+    &__img {
+      width: 15rem;
+    }
+  }
+
+  @include respond(bp-small) {
+    &__info {
+      padding: 0;
+    }
+  }
+
+  @include respond(bp-xs-small) {
+    &__img {
+      width: 10rem;
+    }
+  }
 }

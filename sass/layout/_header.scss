@@ -19,4 +19,14 @@
     padding-top: 2.2rem;
     padding-bottom: 10rem;
   }
+
+  @include respond(bp-large) {
+    background-position: 60% 0;
+  }
+
+  @include respond(bp-xs-small) {
+    &__content {
+      padding: 27.3rem 10rem 0 10rem;
+    }
+  }
 }

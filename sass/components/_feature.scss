@@ -2,7 +2,7 @@
   text-align: center;
   width: 25%;
   display: grid;
-  grid-template-rows: 15rem repeat(3, max-content);
+  grid-template-rows: minmax(15rem, auto) repeat(3, max-content);
   grid-row-gap: 5rem;
   justify-items: center;
   align-items: end;
@@ -25,5 +25,18 @@
 
   &__author-position {
     font-size: 1.46rem;
+  }
+
+  @include respond(bp-small) {
+    width: 100%;
+
+    &:not(:last-child) {
+      padding-bottom: 15rem;
+    }
+
+    &__img {
+      width: 13rem;
+      align-self: center;
+    }
   }
 }

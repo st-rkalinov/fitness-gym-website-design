@@ -2,3 +2,29 @@
   padding-left: $section-base-left-padding + $left-padding;
   padding-right: $section-base-right-padding + $right-padding;
 }
+
+
+//QUERY MANAGER
+//1em = 16px
+@mixin respond($breakpoint) {
+  @if ($breakpoint == bp-large) {
+    @media only screen and (max-width: 75em) { //1200px
+      @content
+    };
+  }
+  @if ($breakpoint == bp-medium) {
+    @media only screen and (max-width: 56.25em) { //900px
+      @content
+    };
+  }
+  @if ($breakpoint == bp-small) {
+    @media only screen and (max-width: 46.875em) { //750px
+      @content
+    };
+  }
+  @if ($breakpoint == bp-xs-small) {
+    @media only screen and (max-width: 37.5em) { //750px
+      @content
+    };
+  }
+}

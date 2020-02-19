@@ -5,6 +5,7 @@
   font-family: $font-secondary;
   align-items: center;
   flex-wrap: wrap;
+
   & > * {
     width: 50%;
   }
@@ -67,4 +68,31 @@
     color: $color-tertiary;
   }
 
+  @include respond(bp-xs-small) {
+    justify-content: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    & > * {
+      width: 100%;
+    }
+
+    &__socials-container {
+      text-align: center;
+      justify-content: space-around;
+    }
+
+    &__socials-list {
+      justify-content: center;
+    }
+
+    &__socials-text {
+      padding: 4rem 0 4rem 0;
+    }
+
+    &__nav-container {
+      padding-top: 10rem;
+      justify-content: space-around;
+    }
+  }
 }
