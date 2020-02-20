@@ -14,16 +14,16 @@
   }
 
   &__date {
-    font-size: 1.67rem;
+    font-size: $font-size-tertiary;
   }
 
   &__text {
-    font-size: 1.67rem;
+    font-size: $font-size-tertiary;
     padding-top: 4rem;
   }
 
   &__title {
-    font-size: 2.08rem;
+    font-size: $font-size-primary;
     font-weight: 500;
     padding-top: 1rem;
     text-transform: uppercase;

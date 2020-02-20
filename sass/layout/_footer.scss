@@ -1,6 +1,6 @@
 .footer {
   @include section-padding($section-content-left-padding, $section-content-right-padding);
-  background-color: #1b1b1b;
+  background-color: $color-secondary-bg;
   display: flex;
   font-family: $font-secondary;
   align-items: center;
@@ -11,8 +11,8 @@
   }
 
   &__socials-text {
-    color: $color-tertiary;
-    font-size: 1.875rem;
+    color: $color-text-secondary;
+    font-size: $font-size-secondary;
     line-height: 2.9rem;
     padding: 2rem 23rem 2rem 0;
   }
@@ -40,7 +40,7 @@
   }
 
   &__nav-column {
-    font-size: 2.08rem;
+    font-size: $font-size-primary;
     font-family: $font-secondary;
 
     &:not(:last-child) {
@@ -50,7 +50,7 @@
 
   &__nav-column-title {
     font-weight: 700;
-    color: $color-tertiary;
+    color: $color-text-secondary;
     text-transform: uppercase;
     padding-bottom: 4.5rem;
   }
@@ -65,7 +65,7 @@
 
   &__nav-link {
     text-decoration: none;
-    color: $color-tertiary;
+    color: $color-text-secondary;
   }
 
   @include respond(bp-xs-small) {

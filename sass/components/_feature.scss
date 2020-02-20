@@ -8,23 +8,19 @@
   align-items: end;
 
   &__text {
-    font-size: 1.67rem;
-    color: $color-primary;
+    font-size: $font-size-tertiary;
+    color: $color-text-primary;
     padding: 0 6rem;
   }
 
   &__author-info {
-    color: $color-primary;
+    color: $color-text-primary;
+    font-size: 1.461rem;
   }
 
   &__author {
     text-transform: uppercase;
-    font-size: 1.46rem;
     font-weight: 700;
-  }
-
-  &__author-position {
-    font-size: 1.46rem;
   }
 
   @include respond(bp-small) {

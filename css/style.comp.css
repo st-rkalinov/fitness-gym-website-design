@@ -55,46 +55,48 @@ body > * {
 }
 
 .heading-2 {
-  font-size: 3.75rem;
-  color: #3e3f3a;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-size: 5.83rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 5rem;
 }
 
 .heading-3 {
-  font-size: 2.9rem;
+  font-size: 3.75rem;
+  font-weight: 500;
   color: #3e3f3a;
   text-transform: uppercase;
 }
-.heading-3--about-us {
+
+.heading-4 {
+  font-size: 2.917rem;
+  color: #3e3f3a;
+  text-transform: uppercase;
+}
+.heading-4--about-us {
   font-weight: 900;
 }
-.heading-3--opinions {
+.heading-4--opinions {
   font-family: "Roboto", sans-serif;
   grid-column: 1/-1;
+  font-weight: 700;
 }
-.heading-3--features {
+.heading-4--features {
   font-weight: 500;
   padding-bottom: 3rem;
 }
 
-.heading-4 {
+.heading-5 {
   font-size: 2.5rem;
   color: white;
   text-transform: uppercase;
   font-weight: 700;
 }
-.heading-4--socials {
+.heading-5--socials {
   line-height: 3rem;
   color: #3e3f3a;
   font-weight: 700;
-}
-
-.heading-5 {
-  font-size: 1.87rem;
-  font-weight: 700;
-  color: white;
-  text-transform: uppercase;
 }
 
 .button {
@@ -117,6 +119,7 @@ body > * {
   font-weight: 400;
   float: right;
   margin-top: 6rem;
+  font-size: 2.083rem;
 }
 
 .opinion-card {
@@ -143,18 +146,17 @@ body > * {
   grid-column: 2/span 1;
 }
 .opinion-card__author-info {
+  font-size: 1.46rem;
   grid-row: 4/span 1;
   grid-column: 2/span 1;
   text-align: center;
 }
 .opinion-card__author {
-  font-size: 1.46rem;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
 .opinion-card__author-position {
-  font-size: 1.46rem;
   font-family: "Lora", serif;
 }
 
@@ -174,14 +176,11 @@ body > * {
 }
 .feature__author-info {
   color: white;
+  font-size: 1.461rem;
 }
 .feature__author {
   text-transform: uppercase;
-  font-size: 1.46rem;
   font-weight: 700;
-}
-.feature__author-position {
-  font-size: 1.46rem;
 }
 @media only screen and (max-width: 46.875em) {
   .feature {
@@ -217,7 +216,7 @@ body > * {
   padding-top: 4rem;
 }
 .regime-box__title {
-  font-size: 2.08rem;
+  font-size: 2.083rem;
   font-weight: 500;
   padding-top: 1rem;
   text-transform: uppercase;
@@ -366,7 +365,7 @@ body > * {
   display: flex;
 }
 .footer__nav-column {
-  font-size: 2.08rem;
+  font-size: 2.083rem;
   font-family: "Roboto", sans-serif;
 }
 .footer__nav-column:not(:last-child) {
@@ -433,7 +432,7 @@ body > * {
 }
 .section-about-us__text {
   color: #3e3f3a;
-  font-size: 1.9rem;
+  font-size: 1.875rem;
   padding-top: 4rem;
 }
 
@@ -450,8 +449,15 @@ body > * {
   grid-row-gap: 3rem;
   align-items: center;
 }
+.section-our-thinking__title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  line-height: 3.3rem;
+}
 .section-our-thinking__text {
-  font-size: 1.6rem;
+  font-size: 1.67rem;
   color: white;
   padding-top: 2rem;
 }
@@ -483,9 +489,10 @@ body > * {
 .section-opinions__text {
   text-align: center;
   padding: 0 9%;
-  font-size: 2.1rem;
+  font-size: 2.083rem;
   color: #3e3f3a;
   grid-column: 1/-1;
+  line-height: 3.3rem;
 }
 .section-opinions__opinions {
   grid-column: 1/-1;
@@ -541,7 +548,7 @@ body > * {
   font-weight: 500;
 }
 .section-quote__text {
-  font-size: 2.08rem;
+  font-size: 2.083rem;
   line-height: 3rem;
   padding: 0 13rem;
 }
@@ -550,7 +557,7 @@ body > * {
   font-weight: 400;
 }
 .section-quote__author {
-  font-size: 1.87rem;
+  font-size: 1.875rem;
   padding-top: 5rem;
 }
 .section-quote--darker {
@@ -577,7 +584,7 @@ body > * {
 }
 .section-thought__text {
   color: #3e3f3a;
-  font-size: 1.87rem;
+  font-size: 1.875rem;
   line-height: 3rem;
   padding-top: 2rem;
 }
@@ -654,7 +661,7 @@ body > * {
   flex-direction: column;
 }
 .section-events__title {
-  font-size: 2.08rem;
+  font-size: 2.083rem;
   color: white;
 }
 .section-events__date {

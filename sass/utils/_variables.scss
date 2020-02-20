@@ -1,12 +1,21 @@
 //COLORS
-$color-overlay: black;
-$color-primary: white;
-$color-tertiary: #3e3f3a;
+$color-text-primary: white;
+$color-text-secondary: #3e3f3a;
+
+$color-primary-bg: black;
+$color-secondary-bg: #1b1b1b;
+
+$color-overlay: $color-primary-bg;
 
 //FONTS
 $font-primary: 'Raleway', sans-serif;
 $font-secondary: 'Roboto', sans-serif;
 $font-tertiary: 'Lora', serif;
+
+//FONT SIZES
+$font-size-primary: 2.083rem;
+$font-size-secondary: 1.875rem;
+$font-size-tertiary: 1.67rem;
 
 //PADDINGS
 $section-base-left-padding: 8.85%;

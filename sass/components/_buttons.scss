@@ -6,7 +6,7 @@
   font-size: 2.5rem;
   cursor: pointer;
   padding: 1.2rem 5.2rem;
-  background-color: rgba($color-primary, .9);
+  background-color: rgba($color-text-primary, .9);
   border-radius: 2.5rem;
   width: 25.7rem;
   margin: 0 auto;
@@ -18,5 +18,6 @@
     font-weight: 400;
     float: right;
     margin-top: 6rem;
+    font-size: $font-size-primary;
   }
 }

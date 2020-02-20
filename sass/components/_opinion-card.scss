@@ -1,15 +1,15 @@
 .opinion-card {
-  background-color: rgba(black, .5);
+  background-color: rgba($color-primary-bg, .5);
   display: grid;
   grid-template-rows: 1fr repeat(3, max-content) 1fr;
   grid-template-columns: 1fr minmax(17.6rem, 1fr) 1fr;
   grid-row-gap: 6rem;
   justify-items: center;
-  color: $color-primary;
+  color: $color-text-primary;
 
 
   &__title {
-    font-size: 1.67rem;
+    font-size: $font-size-tertiary;
     grid-row: 2 / span 1;
     grid-column: 2 / span 1;
     font-family: $font-secondary;
@@ -19,27 +19,26 @@
   }
 
   &__text {
-    font-size: 1.67rem;
+    font-size: $font-size-tertiary;
     font-family: $font-tertiary;
     grid-row: 3 / span 1;
     grid-column: 2 / span 1;
   }
 
   &__author-info {
+    font-size: 1.46rem;
     grid-row: 4 / span 1;
     grid-column: 2 / span 1;
     text-align: center;
   }
 
   &__author {
-    font-size: 1.46rem;
     font-family: $font-secondary;
     font-weight: 700;
     text-transform: uppercase;
   }
 
   &__author-position {
-    font-size: 1.46rem;
     font-family: $font-tertiary;
   }
 }

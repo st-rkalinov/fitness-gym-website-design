@@ -18,8 +18,8 @@
   }
 
   &__text {
-    color: $color-tertiary;
-    font-size: 1.9rem;
+    color: $color-text-secondary;
+    font-size: $font-size-secondary;
     padding-top: 4rem;
 
   }
@@ -29,7 +29,7 @@
   @include section-padding($section-content-left-padding, $section-content-right-padding);
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #1b1b1b;
+  background-color: $color-secondary-bg;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(29rem, 30rem));
   justify-content: center;
@@ -37,9 +37,17 @@
   grid-row-gap: 3rem;
   align-items: center;
 
+  &__title {
+    font-size: $font-size-secondary;
+    font-weight: 700;
+    color: $color-text-primary;
+    text-transform: uppercase;
+    line-height: 3.3rem;
+  }
+
   &__text {
-    font-size: 1.6rem;
-    color: $color-primary;
+    font-size: $font-size-tertiary;
+    color: $color-text-primary;
     padding-top: 2rem;
   }
 
@@ -72,9 +80,10 @@
   &__text {
     text-align: center;
     padding: 0 9%;
-    font-size: 2.1rem;
-    color: $color-tertiary;
+    font-size: $font-size-primary;
+    color: $color-text-secondary;
     grid-column: 1 / -1;
+    line-height: 3.3rem;
   }
 
   &__opinions {
@@ -100,16 +109,16 @@
   }
 
   &__text {
-    font-size: 1.875rem;
+    font-size: $font-size-secondary;
     line-height: 3rem;
-    color: $color-tertiary;
+    color: $color-text-secondary;
     padding-bottom: 10rem;
   }
 
   &__types {
     list-style: none;
-    color: $color-tertiary;
-    font-size: 1.67rem;
+    color: $color-text-secondary;
+    font-size: $font-size-tertiary;
     display: flex;
     justify-content: space-around;
     width: 70%;
@@ -128,35 +137,35 @@
   @include section-padding($section-content-left-padding, $section-content-right-padding);
   padding-top: 10rem;
   padding-bottom: 5rem;
-  background-color: #1b1b1b;
-  color: $color-primary;
+  background-color: $color-secondary-bg;
+  color: $color-text-primary;
   text-align: center;
   font-weight: 500;
 
   &__text {
-    font-size: 2.08rem;
+    font-size: $font-size-primary;
     line-height: 3rem;
     padding: 0 13rem;
 
     &--darker {
-      color: $color-tertiary;
+      color: $color-text-secondary;
       font-weight: 400;
     }
   }
 
   &__author {
-    font-size: 1.87rem;
+    font-size: $font-size-secondary;
     padding-top: 5rem;
   }
 
   &--darker {
-    background-color: black;
+    background-color: $color-primary-bg;
     padding-bottom: 10rem;
   }
 }
 
 .section-thought {
-  background-color: black;
+  background-color: $color-primary-bg;
   display: flex;
 
   & > * {
@@ -176,8 +185,8 @@
   }
 
   &__text {
-    color: $color-tertiary;
-    font-size: 1.87rem;
+    color: $color-text-secondary;
+    font-size: $font-size-secondary;
     line-height: 3rem;
     padding-top: 2rem;
   }
@@ -209,7 +218,7 @@
 
   &__content {
     width: 38%;
-    color: $color-primary;
+    color: $color-text-primary;
     text-align: right;
   }
 
@@ -221,7 +230,7 @@
   }
 
   &__text {
-    font-size: 1.67rem;
+    font-size: $font-size-tertiary;
     font-family: $font-secondary;
     padding-top: 2rem;
   }
@@ -235,15 +244,15 @@
 
 .section-regime {
   @include section-padding($section-content-left-padding, $section-content-right-padding);
-  color: $color-primary;
-  background-color: black;
+  color: $color-text-primary;
+  background-color: $color-primary-bg;
   padding-top: 13rem;
   padding-bottom: 13rem;
 }
 
 .section-events {
   @include section-padding($section-content-left-padding, $section-content-right-padding);
-  background-color: #1b1b1b;
+  background-color: $color-secondary-bg;
   padding-top: 5rem;
   padding-bottom: 5rem;
 
@@ -261,13 +270,13 @@
   }
 
   &__title {
-    font-size: 2.08rem;
-    color: $color-primary;
+    font-size: $font-size-primary;
+    color: $color-text-primary;
   }
 
   &__date {
-    color: $color-tertiary;
-    font-size: 1.67rem;
+    color: $color-text-secondary;
+    font-size: $font-size-tertiary;
     line-height: 3rem;
   }
 
