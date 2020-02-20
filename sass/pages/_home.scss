@@ -162,6 +162,7 @@
 .section-thought {
   background-color: $color-primary-bg;
   display: flex;
+  padding: 0;
 
   & > * {
     width: 50%;

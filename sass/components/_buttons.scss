@@ -12,6 +12,11 @@
   margin: 0 auto;
   text-align: center;
 
+  &:hover {
+    box-shadow: 0 0 10px rgba($color-text-primary, .9);
+    transition: all .2s;
+  }
+
   &--tickets {
     width: 19rem;
     color: #00c0ff;

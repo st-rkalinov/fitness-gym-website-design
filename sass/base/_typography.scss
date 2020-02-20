@@ -5,6 +5,8 @@
   -webkit-text-stroke: 3px white;
   font-weight: 900;
 
+  animation: blur-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both, tracking-in 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
   @include respond(bp-xs-small) {
     font-size: 12rem;
   }
