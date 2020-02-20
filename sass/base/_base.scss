@@ -51,4 +51,8 @@ body {
     [events-end quote2-start] minmax(30rem, auto)
     [quote2-end footer-start] minmax(39rem, auto) [footer-end];
 
+  & > * {
+    @include section-padding($section-content-left-padding, $section-content-right-padding);
+  }
+
 }

@@ -1,6 +1,4 @@
 .section-about-us {
-  @include section-padding($section-content-left-padding, $section-content-right-padding);
-
   background-color: #000000;
   grid-row: about-us-start / about-us-end;
   display: flex;
@@ -26,7 +24,6 @@
 }
 
 .section-our-thinking {
-  @include section-padding($section-content-left-padding, $section-content-right-padding);
   padding-top: 5rem;
   padding-bottom: 5rem;
   background-color: $color-secondary-bg;
@@ -97,7 +94,6 @@
 }
 
 .section-features {
-  @include section-padding($section-content-left-padding, $section-content-right-padding);
   padding-top: 10rem;
   padding-bottom: 10rem;
   background-color: #000000;
@@ -134,7 +130,6 @@
 }
 
 .section-quote {
-  @include section-padding($section-content-left-padding, $section-content-right-padding);
   padding-top: 10rem;
   padding-bottom: 5rem;
   background-color: $color-secondary-bg;
@@ -209,7 +204,6 @@
 }
 
 .section-tickets {
-  @include section-padding($section-content-left-padding, $section-content-right-padding);
   background-image: url("../img/section-tickets-background.png");
   background-size: cover;
   display: flex;
@@ -243,7 +237,6 @@
 }
 
 .section-regime {
-  @include section-padding($section-content-left-padding, $section-content-right-padding);
   color: $color-text-primary;
   background-color: $color-primary-bg;
   padding-top: 13rem;
@@ -251,7 +244,6 @@
 }
 
 .section-events {
-  @include section-padding($section-content-left-padding, $section-content-right-padding);
   background-color: $color-secondary-bg;
   padding-top: 5rem;
   padding-bottom: 5rem;

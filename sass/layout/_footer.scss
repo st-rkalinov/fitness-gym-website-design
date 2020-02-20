@@ -1,5 +1,4 @@
 .footer {
-  @include section-padding($section-content-left-padding, $section-content-right-padding);
   background-color: $color-secondary-bg;
   display: flex;
   font-family: $font-secondary;

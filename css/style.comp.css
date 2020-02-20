@@ -40,6 +40,10 @@ body > * {
   grid-template-columns: 100vw;
   grid-template-rows: [emptybar-start] 4.2rem [emptybar-end nav-start] minmax(5.5rem, auto) [nav-end header-start] minmax(90rem, auto) [header-end about-us-start] minmax(46rem, auto) [about-us-end our-thinking-start] minmax(35rem, auto) [our-thinking-end opinions-start] minmax(130rem, auto) [opinions-end features-start] minmax(95rem, auto) [features-end quote1-start] minmax(30rem, auto) [quote1-end thought-start] 65rem [thought-end tickets-start] minmax(68rem, auto) [tickets-end regime-start] minmax(100rem, auto) [regime-end events-start] minmax(20rem, auto) [events-end quote2-start] minmax(30rem, auto) [quote2-end footer-start] minmax(39rem, auto) [footer-end];
 }
+.container > * {
+  padding-left: 10.77%;
+  padding-right: 10.77%;
+}
 
 .heading-1 {
   font-size: 17.517rem;
@@ -238,8 +242,6 @@ body > * {
 }
 
 .navigation {
-  padding-left: 10.77%;
-  padding-right: 10.77%;
   background-color: #040404;
   grid-row: nav-start/nav-end;
   z-index: 1;
@@ -307,6 +309,7 @@ body > * {
   grid-template-rows: minmax(58rem, auto);
   align-content: center;
   text-align: center;
+  padding: 0;
 }
 .header__content {
   grid-column: 2/3;
@@ -330,8 +333,6 @@ body > * {
 }
 
 .footer {
-  padding-left: 10.77%;
-  padding-right: 10.77%;
   background-color: #1b1b1b;
   display: flex;
   font-family: "Roboto", sans-serif;
@@ -413,8 +414,6 @@ body > * {
 }
 
 .section-about-us {
-  padding-left: 10.77%;
-  padding-right: 10.77%;
   background-color: #000000;
   grid-row: about-us-start/about-us-end;
   display: flex;
@@ -437,8 +436,6 @@ body > * {
 }
 
 .section-our-thinking {
-  padding-left: 10.77%;
-  padding-right: 10.77%;
   padding-top: 5rem;
   padding-bottom: 5rem;
   background-color: #1b1b1b;
@@ -504,8 +501,6 @@ body > * {
 }
 
 .section-features {
-  padding-left: 10.77%;
-  padding-right: 10.77%;
   padding-top: 10rem;
   padding-bottom: 10rem;
   background-color: #000000;
@@ -538,8 +533,6 @@ body > * {
 }
 
 .section-quote {
-  padding-left: 10.77%;
-  padding-right: 10.77%;
   padding-top: 10rem;
   padding-bottom: 5rem;
   background-color: #1b1b1b;
@@ -603,8 +596,6 @@ body > * {
 }
 
 .section-tickets {
-  padding-left: 10.77%;
-  padding-right: 10.77%;
   background-image: url("../img/section-tickets-background.png");
   background-size: cover;
   display: flex;
@@ -634,8 +625,6 @@ body > * {
 }
 
 .section-regime {
-  padding-left: 10.77%;
-  padding-right: 10.77%;
   color: white;
   background-color: black;
   padding-top: 13rem;
@@ -643,8 +632,6 @@ body > * {
 }
 
 .section-events {
-  padding-left: 10.77%;
-  padding-right: 10.77%;
   background-color: #1b1b1b;
   padding-top: 5rem;
   padding-bottom: 5rem;

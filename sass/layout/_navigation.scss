@@ -1,6 +1,4 @@
 .navigation {
-  @include section-padding($section-content-left-padding, $section-content-right-padding);
-
   background-color: #040404;
   grid-row: nav-start / nav-end;
   z-index: 1;
